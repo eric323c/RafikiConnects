@@ -1,13 +1,14 @@
-/* General Styling */
+/* General Reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #fafafa;
     color: #333;
 }
 
-header.navbar {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,29 +17,101 @@ header.navbar {
     border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
-header.navbar h1 {
+.navbar .logo h1 {
     font-size: 24px;
-    color: #007bff;
-}
-
-header.navbar nav a {
-    margin-left: 15px;
-    text-decoration: none;
     color: #007bff;
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+.navbar .search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
 }
 
-main h2 {
-    color: #444;
-    font-size: 28px;
+.navbar .nav-icons img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
+/* Main Content */
+.feed-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Posts Section */
+.posts {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-header .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    display: block;
+}
+
+.post-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Sidebar Section */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    height: fit-content;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggestion .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
