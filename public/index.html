@@ -7,20 +7,59 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header class="navbar">
-        <h1>Rafiki Connects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="create.html">Create</a>
-            <a href="search.html">Search</a>
-        </nav>
+        <div class="logo">
+            <h1>Rafiki Connects</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-icons">
+            <a href="#"><img src="assets/home-icon.png" alt="Home"></a>
+            <a href="#"><img src="assets/messages-icon.png" alt="Messages"></a>
+            <a href="#"><img src="assets/profile-icon.png" alt="Profile"></a>
+        </div>
     </header>
-    <main>
-        <h2>Main Feed</h2>
-        <p>Welcome to Rafiki Connects! This is your main feed.</p>
+
+    <!-- Main Content -->
+    <main class="feed-container">
+        <!-- Posts -->
+        <section class="posts">
+            <div class="post">
+                <div class="post-header">
+                    <img src="assets/user1.jpg" alt="User" class="profile-pic">
+                    <h3>@user1</h3>
+                </div>
+                <img src="assets/post1.jpg" alt="Post Image" class="post-image">
+                <div class="post-footer">
+                    <p>First post on Rafiki Connects! ❤️</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <img src="assets/user2.jpg" alt="User" class="profile-pic">
+                    <h3>@user2</h3>
+                </div>
+                <img src="assets/post2.jpg" alt="Post Image" class="post-image">
+                <div class="post-footer">
+                    <p>Another great post!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Suggestions for You</h2>
+            <div class="suggestion">
+                <img src="assets/user3.jpg" alt="User" class="profile-pic">
+                <p>@friend1</p>
+            </div>
+            <div class="suggestion">
+                <img src="assets/user4.jpg" alt="User" class="profile-pic">
+                <p>@friend2</p>
+            </div>
+        </aside>
     </main>
 </body>
 </html>
-
