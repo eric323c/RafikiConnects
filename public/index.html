@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafiki Connects - Feed</title>
+    <title>Rafiki Connects</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
     <header class="navbar">
         <div class="logo">
-            <h1>Rafiki Connects</h1>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
+            <img src="assets/logo.png" alt="Rafiki Connects" />
         </div>
         <div class="nav-icons">
             <a href="#"><img src="assets/home-icon.png" alt="Home"></a>
+            <a href="#"><img src="assets/search-icon.png" alt="Search"></a>
+            <a href="#"><img src="assets/reels-icon.png" alt="Reels"></a>
             <a href="#"><img src="assets/messages-icon.png" alt="Messages"></a>
             <a href="#"><img src="assets/profile-icon.png" alt="Profile"></a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="feed-container">
-        <!-- Posts -->
-        <section class="posts">
-            <div class="post">
-                <div class="post-header">
-                    <img src="assets/user1.jpg" alt="User" class="profile-pic">
-                    <h3>@user1</h3>
-                </div>
-                <img src="assets/post1.jpg" alt="Post Image" class="post-image">
-                <div class="post-footer">
-                    <p>First post on Rafiki Connects! ❤️</p>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <img src="assets/user2.jpg" alt="User" class="profile-pic">
-                    <h3>@user2</h3>
-                </div>
-                <img src="assets/post2.jpg" alt="Post Image" class="post-image">
-                <div class="post-footer">
-                    <p>Another great post!</p>
-                </div>
-            </div>
-        </section>
+    <!-- Stories Section -->
+    <section class="stories">
+        <div class="story">
+            <img src="assets/user1.jpg" alt="User Story">
+            <p>Your Story</p>
+        </div>
+        <div class="story">
+            <img src="assets/user2.jpg" alt="User Story">
+            <p>@friend1</p>
+        </div>
+        <div class="story">
+            <img src="assets/user3.jpg" alt="User Story">
+            <p>@friend2</p>
+        </div>
+        <div class="story">
+            <img src="assets/user4.jpg" alt="User Story">
+            <p>@friend3</p>
+        </div>
+    </section>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2>Suggestions for You</h2>
-            <div class="suggestion">
-                <img src="assets/user3.jpg" alt="User" class="profile-pic">
-                <p>@friend1</p>
+    <!-- Posts Section -->
+    <section class="posts">
+        <div class="post">
+            <div class="post-header">
+                <img src="assets/user1.jpg" alt="Profile Pic" class="profile-pic">
+                <h3>@user1</h3>
             </div>
-            <div class="suggestion">
-                <img src="assets/user4.jpg" alt="User" class="profile-pic">
-                <p>@friend2</p>
+            <img src="assets/post1.jpg" alt="Post Image" class="post-image">
+            <div class="post-actions">
+                <img src="assets/like-icon.png" alt="Like">
+                <img src="assets/comment-icon.png" alt="Comment">
+                <img src="assets/share-icon.png" alt="Share">
             </div>
-        </aside>
-    </main>
+            <p>Liked by @friend4 and others</p>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="assets/user2.jpg" alt="Profile Pic" class="profile-pic">
+                <h3>@user2</h3>
+            </div>
+            <img src="assets/post2.jpg" alt="Post Image" class="post-image">
+            <div class="post-actions">
+                <img src="assets/like-icon.png" alt="Like">
+                <img src="assets/comment-icon.png" alt="Comment">
+                <img src="assets/share-icon.png" alt="Share">
+            </div>
+            <p>Another amazing day! 🌟</p>
+        </div>
+    </section>
 </body>
 </html>
